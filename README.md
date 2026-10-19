@@ -34,16 +34,18 @@ Adivina la palabra secreta antes de agotar los **7 intentos**. Cada error dibuja
 
 ## 🧱 Estructura del proyecto
 
-ahorcadoJavaPOO/
+```
+.
 ├── recursos/
-│ └── palabras.txt # Banco de palabras (formato: categoría;PALABRA;pista)
+│   └── palabras.txt        # Banco de palabras (formato: categoría;PALABRA;pista)
 ├── src/
-│ └── ahorcado/
-│ ├── app/ # Punto de entrada (Main)
-│ ├── logica/ # Lógica del juego y pistas (herencia y polimorfismo)
-│ ├── modelo/ # Banco de palabras y fichas
-│ └── ui/ # Interfaz gráfica (ventana y dibujo del ahorcado)
+│   └── ahorcado/
+│       ├── app/            # Punto de entrada (Main)
+│       ├── logica/         # Lógica del juego y pistas (herencia y polimorfismo)
+│       ├── modelo/         # Banco de palabras y fichas
+│       └── ui/             # Interfaz gráfica (ventana y dibujo del ahorcado)
 └── .gitignore
+```
 
 ## 🚀 Cómo ejecutarlo
 
