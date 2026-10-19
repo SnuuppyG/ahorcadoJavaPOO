@@ -1,9 +1,3 @@
-/*
- * Clase: Pista (abstracta)
- * Base de las tres pistas del juego. Define el comportamiento común:
- * controlar si la pista ya fue usada y reiniciarla en cada partida.
- * Cada subclase decide qué mensaje genera (polimorfismo mediante generarMensaje).
- */
 package logica;
 
 public abstract class Pista {
@@ -12,31 +6,32 @@ public abstract class Pista {
     private boolean usada = false;
 
     /*
-     * Crea una pista con su nombre visible.
+      Crea una pista con su nombre visible.
      */
     protected Pista(String nombre) {
         this.nombre = nombre;
     }
 
     /*
-     * Usa la pista: la marca como usada y devuelve el mensaje correspondiente.
-     * Si ya fue usada, devuelve un aviso sin repetir la acción.
+      Usa la pista: la marca como usada y devuelve el mensaje correspondiente.
+      Si ya fue usada, devuelve un aviso sin repetir la acción.
      */
     public final String usar(JuegoAhorcado juego) {
         if (usada) {
             return "Ya usaste la pista de " + nombre.toLowerCase() + ".";
         }
         usada = true;
-        return generarMensaje(juego);
+        return aplicar(juego);
     }
 
     /*
-     * Cada subclase define su propio mensaje de pista.
+      Cada subclase define qué hace la pista y devuelve el mensaje para el jugador.
+      Puede modificar el estado de la partida (por eso no se llama generarMensaje).
      */
-    protected abstract String generarMensaje(JuegoAhorcado juego);
+    protected abstract String aplicar(JuegoAhorcado juego);
 
     /*
-     * Restablece la pista para una nueva partida.
+      Restablece la pista para una nueva partida.
      */
     public void reiniciar() {
         usada = false;

@@ -1,10 +1,3 @@
-/*
- * Clase: VentanaAhorcado
- * Ventana principal (JFrame) del juego. Organiza la interfaz en regiones:
- * la palabra y los mensajes arriba, el dibujo al centro, los intentos, las
- * pistas y el botón de nueva partida a la derecha, y el teclado de letras abajo.
- * Actúa como intermediario entre el usuario y la lógica (JuegoAhorcado).
- */
 package ui;
 
 import java.awt.BorderLayout;
@@ -39,7 +32,7 @@ public class VentanaAhorcado extends JFrame {
     private final Map<Pista, JButton> botonesPista = new LinkedHashMap<>();
 
     /*
-     * Crea la ventana, carga el juego y construye la interfaz.
+      Crea la ventana, carga el juego y construye la interfaz.
      */
     public VentanaAhorcado() {
         super("Juego del Ahorcado");
@@ -53,7 +46,7 @@ public class VentanaAhorcado extends JFrame {
     }
 
     /*
-     * Carga el banco de palabras. Si falla, informa al usuario y cierra la aplicación.
+      Carga el banco de palabras. Si falla, informa al usuario y cierra la aplicación.
      */
     private static JuegoAhorcado crearJuego() {
         try {
@@ -68,7 +61,7 @@ public class VentanaAhorcado extends JFrame {
     }
 
     /*
-     * Crea todos los componentes y los ubica en sus regiones.
+      Crea todos los componentes y los ubica en sus regiones.
      */
     private void construirInterfaz() {
         lblPalabra.setFont(new Font("Monospaced", Font.BOLD, 30));
@@ -113,7 +106,7 @@ public class VentanaAhorcado extends JFrame {
     }
 
     /*
-     * Procesa la letra presionada y actualiza la vista.
+      Procesa la letra presionada y actualiza la vista.
      */
     private void procesarLetra(char letra) {
         if (juego.getEstado() != JuegoAhorcado.Estado.EN_CURSO) {
@@ -125,7 +118,7 @@ public class VentanaAhorcado extends JFrame {
     }
 
     /*
-     * Usa la pista seleccionada y muestra su mensaje.
+      Usa la pista seleccionada y muestra su mensaje.
      */
     private void usarPista(Pista pista) {
         lblMensaje.setText(pista.usar(juego));
@@ -133,7 +126,7 @@ public class VentanaAhorcado extends JFrame {
     }
 
     /*
-     * Inicia una nueva partida con otra palabra.
+      Inicia una nueva partida con otra palabra.
      */
     private void nuevaPartida() {
         juego.nuevaPartida();
@@ -142,8 +135,8 @@ public class VentanaAhorcado extends JFrame {
     }
 
     /*
-     * Sincroniza todos los componentes con el estado actual del juego:
-     * palabra oculta, intentos, letras falladas, dibujo, botones habilitados y mensaje final.
+      Sincroniza todos los componentes con el estado actual del juego:
+      palabra oculta, intentos, letras falladas, dibujo, botones habilitados y mensaje final.
      */
     private void actualizarVista() {
         boolean enCurso = juego.getEstado() == JuegoAhorcado.Estado.EN_CURSO;

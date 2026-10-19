@@ -1,10 +1,3 @@
-/*
- * Clase: PanelAhorcado
- * Panel de dibujo que muestra el progreso del ahorcado.
- * Cada error agrega una parte del cuerpo: cabeza, torso, brazo derecho,
- * brazo izquierdo, pierna derecha, pierna izquierda y, finalmente, la cuerda.
- * Recibe el número de errores mediante setErrores y se redibuja solo.
- */
 package ui;
 
 import java.awt.BasicStroke;
@@ -14,16 +7,16 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.JPanel;
+import logica.JuegoAhorcado;
 
 public class PanelAhorcado extends JPanel {
 
-    private static final int MAX_ERRORES = 7;
     private static final Color COLOR_CUERDA = new Color(190, 40, 40);
 
     private int errores = 0;
 
     /*
-     * Configura el fondo y el tamaño preferido del panel.
+      Configura el fondo y el tamaño preferido del panel.
      */
     public PanelAhorcado() {
         setBackground(Color.WHITE);
@@ -31,15 +24,15 @@ public class PanelAhorcado extends JPanel {
     }
 
     /*
-     * Establece la cantidad de errores (entre 0 y 7) y redibuja el panel.
+     Establece la cantidad de errores (entre 0 y JuegoAhorcado.MAX_INTENTOS) y redibuja el panel.
      */
     public void setErrores(int errores) {
-        this.errores = Math.max(0, Math.min(errores, MAX_ERRORES));
+        this.errores = Math.max(0, Math.min(errores, JuegoAhorcado.MAX_INTENTOS));
         repaint();
     }
 
     /*
-     * Dibuja la estructura fija y después las partes del cuerpo según los errores.
+      Dibuja la estructura fija y después las partes del cuerpo según los errores.
      */
     @Override
     protected void paintComponent(Graphics g) {
@@ -56,7 +49,7 @@ public class PanelAhorcado extends JPanel {
     }
 
     /*
-     * Dibuja la base, el poste y la viga de la horca.
+      Dibuja la base, el poste y la viga de la horca.
      */
     private void dibujarEstructura(Graphics2D g2) {
         g2.setColor(new Color(90, 60, 30));
@@ -66,7 +59,8 @@ public class PanelAhorcado extends JPanel {
     }
 
     /*
-     * Dibuja cada parte del cuerpo según el número de errores acumulados.
+      Dibuja cada parte del cuerpo según el número de errores acumulados.
+      Las 7 piezas corresponden a los 7 intentos; si cambia MAX_INTENTOS, hay que revisar este dibujo.
      */
     private void dibujarCuerpo(Graphics2D g2) {
         g2.setColor(Color.DARK_GRAY);

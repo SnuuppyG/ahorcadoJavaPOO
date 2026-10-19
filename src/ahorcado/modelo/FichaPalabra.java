@@ -1,9 +1,3 @@
-/*
- * Clase: FichaPalabra
- * Modelo que representa una entrada del banco de palabras:
- * su categoría, la palabra secreta y la pista escrita.
- * Sus atributos son privados e inmutables (final) para garantizar encapsulación.
- */
 package modelo;
 
 public class FichaPalabra {
@@ -13,7 +7,7 @@ public class FichaPalabra {
     private final String pistaEscrita;
 
     /*
-     * Crea una ficha. La palabra se normaliza a mayúsculas.
+      Crea una ficha. La palabra se normaliza a mayúsculas.
      */
     public FichaPalabra(String categoria, String palabra, String pistaEscrita) {
         this.categoria = categoria;
@@ -22,21 +16,21 @@ public class FichaPalabra {
     }
 
     /*
-     * Devuelve la categoría de la palabra.
+      Devuelve la categoría de la palabra.
      */
     public String getCategoria() {
         return categoria;
     }
 
     /*
-     * Devuelve la palabra secreta en mayúsculas.
+      Devuelve la palabra secreta en mayúsculas.
      */
     public String getPalabra() {
         return palabra;
     }
 
     /*
-     * Devuelve la pista escrita asociada a la palabra.
+      Devuelve la pista escrita asociada a la palabra.
      */
     public String getPistaEscrita() {
         return pistaEscrita;

@@ -1,15 +1,9 @@
-/*
- * Clase: JuegoAhorcado
- * Lógica principal del juego. Controla la palabra secreta, las letras acertadas
- * y falladas, los intentos disponibles y el estado de la partida
- * (EN_CURSO, GANADO o PERDIDO). Sus atributos son privados y se accede a ellos
- * mediante métodos públicos (encapsulación). Usa ArrayList para las letras.
- */
 package logica;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import modelo.BancoDePalabras;
 import modelo.FichaPalabra;
@@ -29,7 +23,7 @@ public class JuegoAhorcado {
     private Estado estado;
 
     /*
-     * Crea el juego, registra las tres pistas y comienza una primera partida.
+      Crea el juego, registra las tres pistas y comienza una primera partida.
      */
     public JuegoAhorcado(BancoDePalabras banco) {
         this.banco = banco;
@@ -40,7 +34,7 @@ public class JuegoAhorcado {
     }
 
     /*
-     * Reinicia el juego con una palabra aleatoria del banco.
+      Reinicia el juego con una palabra aleatoria del banco.
      */
     public void nuevaPartida() {
         fichaActual = banco.obtenerAleatoria();
@@ -53,8 +47,8 @@ public class JuegoAhorcado {
     }
 
     /*
-     * Procesa un intento de letra. Devuelve true si la letra está en la palabra.
-     * Ignora letras ya usadas o partidas terminadas.
+      Procesa un intento de letra. Devuelve true si la letra está en la palabra.
+      Ignora letras ya usadas o partidas terminadas.
      */
     public boolean intentarLetra(char letra) {
         if (estado != Estado.EN_CURSO || letraYaUsada(letra)) {
@@ -74,11 +68,13 @@ public class JuegoAhorcado {
     }
 
     /*
-     * Revela una letra aleatoria que aún no esté acertada. Usada por PistaLetra.
+      Revela una letra aleatoria que aún no esté acertada y la devuelve.
+      Modifica la partida (la letra cuenta como acierto). Devuelve vacío si la
+      partida terminó o no quedan letras por revelar.
      */
-    public String revelarLetraAleatoria() {
+    public Optional<Character> revelarLetraAleatoria() {
         if (estado != Estado.EN_CURSO) {
-            return "La partida ya terminó.";
+            return Optional.empty();
         }
         ArrayList<Character> ocultas = new ArrayList<>();
         for (char c : fichaActual.getPalabra().toCharArray()) {
@@ -87,16 +83,16 @@ public class JuegoAhorcado {
             }
         }
         if (ocultas.isEmpty()) {
-            return "No quedan letras por revelar.";
+            return Optional.empty();
         }
         char elegida = ocultas.get(random.nextInt(ocultas.size()));
         letrasAcertadas.add(elegida);
         verificarVictoria();
-        return "Letra revelada: " + elegida;
+        return Optional.of(elegida);
     }
 
     /*
-     * Indica si la letra ya fue acertada o fallada en esta partida.
+      Indica si la letra ya fue acertada o fallada en esta partida.
      */
     public boolean letraYaUsada(char letra) {
         char letraMayus = Character.toUpperCase(letra);
@@ -104,8 +100,8 @@ public class JuegoAhorcado {
     }
 
     /*
-     * Devuelve la palabra con guiones bajos para las letras no descubiertas.
-     * Ejemplo: "G _ T O".
+      Devuelve la palabra con guiones bajos para las letras no descubiertas.
+      Ejemplo: "G _ T O".
      */
     public String getPalabraOculta() {
         StringBuilder sb = new StringBuilder();
@@ -116,7 +112,7 @@ public class JuegoAhorcado {
     }
 
     /*
-     * Comprueba si todas las letras de la palabra ya fueron acertadas.
+      Comprueba si todas las letras de la palabra ya fueron acertadas.
      */
     private boolean palabraAdivinada() {
         for (char c : fichaActual.getPalabra().toCharArray()) {
@@ -128,7 +124,7 @@ public class JuegoAhorcado {
     }
 
     /*
-     * Cambia el estado a GANADO si la palabra está completa.
+      Cambia el estado a GANADO si la palabra está completa.
      */
     private void verificarVictoria() {
         if (palabraAdivinada()) {

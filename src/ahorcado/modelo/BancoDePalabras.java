@@ -1,9 +1,3 @@
-/*
- * Clase: BancoDePalabras
- * Gestiona el banco de palabras. Lee el recurso palabras.txt y
- * almacena cada línea válida como una FichaPalabra dentro de un ArrayList.
- * Permite obtener una ficha aleatoria para cada partida.
- */
 package modelo;
 
 import java.io.IOException;
@@ -24,16 +18,16 @@ public class BancoDePalabras {
     private final Random random = new Random();
 
     /*
-     * Carga el banco desde el recurso del proyecto.
-     * Lanza IOException si el recurso no existe o no se puede leer.
+      Carga el banco desde el recurso del proyecto.
+      Lanza IOException si el recurso no existe o no se puede leer.
      */
     public BancoDePalabras() throws IOException {
         cargarDesdeRecurso();
     }
 
     /*
-     * Lee el recurso línea por línea. Ignora líneas vacías y comentarios (#).
-     * Formato esperado: categoria;PALABRA;pista
+      Lee el recurso línea por línea. Ignora líneas vacías y comentarios (#).
+      Formato esperado: categoria;PALABRA;pista
      */
     private void cargarDesdeRecurso() throws IOException {
         InputStream recurso = BancoDePalabras.class.getResourceAsStream(RUTA_RECURSO);
@@ -58,14 +52,14 @@ public class BancoDePalabras {
     }
 
     /*
-     * Devuelve una ficha elegida al azar del banco.
+      Devuelve una ficha elegida al azar del banco.
      */
     public FichaPalabra obtenerAleatoria() {
         return fichas.get(random.nextInt(fichas.size()));
     }
 
     /*
-     * Devuelve la lista de categorías distintas, sin repetir.
+      Devuelve la lista de categorías distintas, sin repetir.
      */
     public List<String> getCategorias() {
         ArrayList<String> categorias = new ArrayList<>();
@@ -78,7 +72,7 @@ public class BancoDePalabras {
     }
 
     /*
-     * Devuelve la cantidad total de palabras cargadas.
+      Devuelve la cantidad total de palabras cargadas.
      */
     public int getTotalPalabras() {
         return fichas.size();
