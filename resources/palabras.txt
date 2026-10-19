@@ -1,0 +1,201 @@
+# categoria;palabra;pista
+Animales;PERRO;Es el mejor amigo del hombre y ladra.
+Animales;GATO;Felino doméstico que maúlla y caza ratones.
+Animales;CABALLO;Animal que se monta y relincha.
+Animales;VACA;Animal de granja que da leche y muge.
+Animales;CERDO;Animal de granja que gruñe y se revuelca en el lodo.
+Animales;OVEJA;Animal que produce lana.
+Animales;CABRA;Animal de granja con cuernos que da leche.
+Animales;CONEJO;Roedor de orejas largas que salta.
+Animales;RATON;Roedor pequeño que suele esconderse en la cocina.
+Animales;ELEFANTE;El animal terrestre más grande, con trompa.
+Animales;JIRAFA;Tiene el cuello más largo del mundo animal.
+Animales;LEON;Rey de la selva con melena.
+Animales;TIGRE;Felino de rayas anaranjadas y negras.
+Animales;OSO;Mamífero grande que hiberna en invierno.
+Animales;LOBO;Cánido salvaje que aúlla a la luna.
+Animales;ZORRO;Cánido astuto de cola esponjosa.
+Animales;VENADO;Tiene astas que cambia cada año.
+Animales;BURRO;Equino de orejas largas que rebuzna.
+Animales;GALLINA;Ave de corral que pone huevos.
+Animales;PATO;Ave acuática que nada y hace cuac.
+Animales;PAVO;Ave de corral que abre la cola en abanico.
+Animales;PINGUINO;Ave que no vuela y vive en el frío polar.
+Animales;DELFIN;Mamífero marino muy inteligente que salta sobre el agua.
+Animales;BALLENA;Mamífero marino gigante que expulsa chorros de agua.
+Animales;TIBURON;Pez con muchos dientes afilados que habita en el mar.
+Animales;PULPO;Molusco de ocho tentáculos.
+Animales;CANGREJO;Crustáceo que camina de lado.
+Animales;TORTUGA;Reptil que lleva un caparazón.
+Animales;COCODRILO;Reptil de mandíbulas poderosas que vive en ríos.
+Animales;SERPIENTE;Reptil sin patas que se desliza por el suelo.
+Animales;RANA;Anfibio que salta y croa.
+Animales;ABEJA;Insecto que produce miel.
+Animales;HORMIGA;Insecto que vive en colonias y carga cargas grandes.
+Animales;MARIPOSA;Insecto de alas coloridas que nace de una oruga.
+Animales;ARAÑA;Artrópodo de ocho patas que teje redes de seda.
+Animales;BUHO;Ave nocturna de ojos grandes que caza de noche.
+Animales;AGUILA;Ave rapaz de vista muy aguda.
+Animales;LORO;Ave capaz de imitar palabras.
+Animales;CANARIO;Pájaro cantor de color amarillo.
+Animales;HIPOPOTAMO;Mamífero africano que pasa gran parte del día en el agua.
+Países;COLOMBIA;País sudamericano cuya capital es Bogotá.
+Países;MEXICO;Famoso por los mariachis y el mezcal.
+Países;PERU;País sudamericano famoso por Machu Picchu.
+Países;CHILE;País largo y estrecho del cono sur.
+Países;ARGENTINA;País sudamericano famoso por el tango.
+Países;BRASIL;País más grande de Sudamérica, famoso por su carnaval.
+Países;ECUADOR;País atravesado por la línea ecuatorial.
+Países;BOLIVIA;País sin salida al mar con sede de gobierno en La Paz.
+Países;VENEZUELA;País sudamericano con el Salto Ángel.
+Países;URUGUAY;País pequeño junto al Río de la Plata.
+Países;PARAGUAY;País sudamericano sin costas en el mar.
+Países;CUBA;Isla del Caribe famosa por sus puros.
+Países;PANAMA;Istmo con un canal famoso que une dos océanos.
+Países;ESPAÑA;País europeo famoso por la paella y el flamenco.
+Países;FRANCIA;País europeo que tiene la Torre Eiffel.
+Países;ITALIA;País europeo con forma de bota.
+Países;ALEMANIA;País europeo famoso por el Oktoberfest.
+Países;PORTUGAL;País ibérico vecino de España.
+Países;JAPON;País asiático de las islas y del sol naciente.
+Países;CHINA;País asiático que tiene la Gran Muralla.
+Países;INDIA;País asiático famoso por el Taj Mahal.
+Países;EGIPTO;País africano con las pirámides de Giza.
+Países;CANADA;País norteamericano famoso por el hockey sobre hielo.
+Países;GRECIA;Cuna de la democracia y de los Juegos Olímpicos antiguos.
+Países;RUSIA;País más extenso del mundo.
+Países;SUECIA;País nórdico conocido por sus muebles de diseño sencillo.
+Países;NORUEGA;País nórdico famoso por sus fiordos.
+Países;IRLANDA;Isla europea famosa por el trébol.
+Países;AUSTRALIA;País-continente del hemisferio sur con canguros.
+Países;MARRUECOS;País africano del norte cuya ciudad más famosa es Marrakech.
+Países;KENIA;País africano famoso por sus safaris.
+Países;TAILANDIA;País asiático de playas y templos budistas.
+Países;TURQUIA;País que une Europa y Asia, con la ciudad de Estambul.
+Países;HOLANDA;Famoso por sus molinos, quesos y tulipanes.
+Países;GUATEMALA;País centroamericano de la cultura maya.
+Países;HONDURAS;País centroamericano con costas en el Caribe y el Pacífico.
+Países;NICARAGUA;Tiene el lago más grande de Centroamérica.
+Países;COREA;Península asiática dividida en dos países.
+Países;POLONIA;País europeo del este cuya capital es Varsovia.
+Países;ISLANDIA;Isla de volcanes y géiseres en el Atlántico norte.
+Deportes;FUTBOL;Se juega con los pies y un balón entre dos porterías.
+Deportes;BALONCESTO;Se encesta el balón en un aro alto.
+Deportes;TENIS;Se golpea una pelota con raqueta por encima de una red.
+Deportes;NATACION;Deporte acuático con estilos libre, espalda y mariposa.
+Deportes;ATLETISMO;Incluye carreras, saltos y lanzamientos.
+Deportes;CICLISMO;Se practica sobre dos ruedas con pedales.
+Deportes;BOXEO;Combate con guantes sobre un cuadrilátero.
+Deportes;GOLF;Se busca meter una pelota en hoyos con palos.
+Deportes;VOLEIBOL;Se golpea el balón por encima de una red con las manos.
+Deportes;RUGBY;Deporte de contacto con un balón ovalado.
+Deportes;BEISBOL;Se batea y se corre por cuatro bases.
+Deportes;HOCKEY;Se juega sobre hielo con un disco y un palo.
+Deportes;ESQUI;Se desliza sobre nieve con tablas en los pies.
+Deportes;SURF;Se practica sobre una tabla en las olas.
+Deportes;ALPINISMO;Consiste en escalar montañas altas.
+Deportes;ESGRIMA;Duelo con espada y careta protectora.
+Deportes;JUDO;Arte marcial japonés basado en proyecciones.
+Deportes;KARATE;Arte marcial japonés de golpes con manos y pies.
+Deportes;PATINAJE;Deslizarse sobre ruedas o cuchillas sobre hielo o asfalto.
+Deportes;MARATON;Carrera de 42 kilómetros.
+Deportes;BADMINTON;Se juega con volante y raquetas ligeras.
+Deportes;POLO;Se juega a caballo con mazo y pelota.
+Deportes;REMO;Se impulsa una embarcación con remos.
+Deportes;TRIATLON;Combina natación, ciclismo y carrera.
+Deportes;ARQUERIA;Se disparan flechas a una diana.
+Deportes;SQUASH;Juego de raqueta contra las paredes de una cancha cerrada.
+Deportes;HALTEROFILIA;Consiste en levantar grandes pesos con barra.
+Deportes;LUCHA;Combate cuerpo a cuerpo con agarres y derribos.
+Deportes;KAYAK;Bote estrecho impulsado con pala de doble hoja.
+Deportes;SKATE;Tabla con cuatro ruedas para hacer trucos.
+Deportes;ESCALADA;Subir muros usando agarres y cuerdas.
+Deportes;BALONMANO;Se pasa y lanza el balón con las manos hacia la portería.
+Deportes;WATERPOLO;Balón en la piscina con porterías y nadadores.
+Deportes;SOFTBOL;Versión parecida al béisbol con pelota más grande.
+Deportes;AUTOMOVILISMO;Carreras de autos a alta velocidad.
+Deportes;MOTOCROSS;Carrera de motos en terreno de tierra.
+Deportes;SNOWBOARD;Deslizarse sobre nieve con una sola tabla.
+Deportes;RAFTING;Descenso de ríos en bote inflable con remos.
+Deportes;GIMNASIA;Ejercicios de acrobacia y flexibilidad con aparatos.
+Deportes;BOLOS;Se derriban pinos lanzando una bola pesada por una pista de madera.
+Objetos;MARTILLO;Herramienta con cabeza de metal para clavar.
+Objetos;TIJERAS;Herramienta de dos hojas para cortar papel.
+Objetos;LAPIZ;Instrumento de escritura con mina de grafito.
+Objetos;LIBRO;Tiene páginas y guarda historias o conocimiento.
+Objetos;RELOJ;Indica la hora.
+Objetos;PARAGUAS;Protege de la lluvia y se abre con un botón.
+Objetos;LLAVE;Sirve para abrir cerraduras.
+Objetos;TELEFONO;Aparato para comunicarse a distancia.
+Objetos;COMPUTADOR;Máquina que procesa información.
+Objetos;CEPILLO;Sirve para limpiar los dientes o peinar el cabello.
+Objetos;ESPEJO;Refleja tu imagen.
+Objetos;ALMOHADA;Se pone en la cama para apoyar la cabeza.
+Objetos;SILLA;Mueble para sentarse, con respaldo.
+Objetos;MESA;Mueble con patas y superficie plana.
+Objetos;VENTANA;Abertura en la pared que deja entrar la luz.
+Objetos;PUERTA;Permite entrar y salir de una habitación.
+Objetos;CUCHARA;Cubierto con forma de cuenco para la sopa.
+Objetos;TENEDOR;Cubierto con púas.
+Objetos;CUCHILLO;Cubierto con hoja afilada para cortar.
+Objetos;BOTELLA;Recipiente para líquidos con cuello estrecho.
+Objetos;MOCHILA;Se lleva a la espalda para cargar útiles.
+Objetos;GAFAS;Lentes que se apoyan en la nariz para ver mejor.
+Objetos;SOMBRERO;Prenda para la cabeza que protege del sol.
+Objetos;GUANTE;Prenda que cubre la mano.
+Objetos;BICICLETA;Vehículo de dos ruedas con pedales.
+Objetos;CARTERA;Guarda dinero y tarjetas.
+Objetos;PINCEL;Herramienta con cerdas para pintar.
+Objetos;TALADRO;Herramienta eléctrica que hace agujeros.
+Objetos;BOMBILLO;Da luz al encenderse la energía eléctrica.
+Objetos;CANDADO;Cierre con arco que se abre con llave o clave.
+Objetos;JABON;Se usa con agua para lavar la piel.
+Objetos;TOALLA;Se usa para secarse después de bañarse.
+Objetos;CAMISA;Prenda con botones al frente.
+Objetos;ZAPATO;Calzado que se pone en el pie.
+Objetos;CALCULADORA;Realiza operaciones matemáticas.
+Objetos;PELOTA;Objeto redondo que se lanza y bota.
+Objetos;CORTINA;Tela que cubre una ventana.
+Objetos;LAMPARA;Aparato que ilumina una habitación.
+Objetos;ESCOBA;Se usa para barrer el piso.
+Objetos;BALDE;Recipiente de plástico para cargar agua.
+Comidas;PIZZA;Plato redondo italiano con queso y salsa de tomate.
+Comidas;HAMBURGUESA;Pan redondo con carne, lechuga y tomate.
+Comidas;ARROZ;Grano blanco que acompaña muchos platos.
+Comidas;PASTA;Harina en forma de espagueti o macarrones.
+Comidas;SOPA;Plato líquido y caliente que se come con cuchara.
+Comidas;ENSALADA;Mezcla fría de vegetales crudos.
+Comidas;TAMAL;Envuelto en hoja de plátano, lleva masa y carne.
+Comidas;AREPA;Pan de maíz típico de Colombia y Venezuela.
+Comidas;EMPANADA;Masa rellena que se fríe u hornea.
+Comidas;FRIJOLES;Legumbre que se come con arroz.
+Comidas;LENTEJAS;Legumbre pequeña y redonda, a veces en sopa.
+Comidas;PAPA;Tubérculo que se puede freír en tiras.
+Comidas;YUCA;Raíz tropical alargada que se come frita o cocida.
+Comidas;CHOCOLATE;Dulce hecho de cacao.
+Comidas;HELADO;Postre frío y dulce que se sirve en cono.
+Comidas;GALLETA;Dulce horneado, pequeño y crujiente.
+Comidas;TORTA;Pastel horneado para celebraciones.
+Comidas;PAN;Se hornea con harina, agua y levadura.
+Comidas;QUESO;Derivado de la leche, se come en tajadas.
+Comidas;JAMON;Carne de cerdo curada y cortada en lonchas.
+Comidas;HUEVO;Lo pone la gallina.
+Comidas;PESCADO;Alimento que se saca del agua.
+Comidas;POLLO;Carne de ave muy común en las casas.
+Comidas;CARNE;Alimento de animales que se asa en la parrilla.
+Comidas;SANCOCHO;Sopa colombiana con plátano, yuca y carne.
+Comidas;AJIACO;Sopa bogotana con papa, pollo y alcaparras.
+Comidas;BUÑUELO;Masa frita en forma de bola, típica de Colombia.
+Comidas;CHURRO;Masa frita alargada cubierta de azúcar.
+Comidas;PAELLA;Arroz con mariscos típico de España.
+Comidas;SUSHI;Arroz con pescado crudo, de origen japonés.
+Comidas;TACO;Tortilla de maíz doblada con relleno, típica de México.
+Comidas;BURRITO;Tortilla de harina enrollada y rellena.
+Comidas;MANGO;Fruta tropical amarilla con un hueso grande.
+Comidas;BANANO;Fruta amarilla y alargada que se pela fácilmente.
+Comidas;PIÑA;Fruta tropical con corona de hojas en la parte superior.
+Comidas;FRESA;Fruta roja pequeña con semillas por fuera.
+Comidas;LIMON;Cítrico ácido de color verde o amarillo.
+Comidas;MANZANA;Fruta crujiente, a menudo roja o verde.
+Comidas;UVA;Fruta pequeña que crece en racimos.
+Comidas;CEREZA;Fruta pequeña y roja con un hueso en el centro.
