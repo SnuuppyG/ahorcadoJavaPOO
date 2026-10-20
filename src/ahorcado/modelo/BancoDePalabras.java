@@ -50,31 +50,4 @@ public class BancoDePalabras {
             }
         }
     }
-
-    /*
-      Devuelve una ficha elegida al azar del banco.
-     */
-    public FichaPalabra obtenerAleatoria() {
-        return fichas.get(random.nextInt(fichas.size()));
-    }
-
-    /*
-      Devuelve la lista de categorías distintas, sin repetir.
-     */
-    public List<String> getCategorias() {
-        ArrayList<String> categorias = new ArrayList<>();
-        for (FichaPalabra ficha : fichas) {
-            if (!categorias.contains(ficha.getCategoria())) {
-                categorias.add(ficha.getCategoria());
-            }
-        }
-        return Collections.unmodifiableList(categorias);
-    }
-
-    /*
-      Devuelve la cantidad total de palabras cargadas.
-     */
-    public int getTotalPalabras() {
-        return fichas.size();
-    }
 }
