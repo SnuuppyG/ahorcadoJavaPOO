@@ -50,4 +50,10 @@ public class BancoDePalabras {
             }
         }
     }
+    /*
+      Devuelve una ficha elegida al azar del banco.
+     */
+    public FichaPalabra obtenerAleatoria() {
+        return fichas.get(random.nextInt(fichas.size()));
+    }
 }
